@@ -1,0 +1,44 @@
+{
+  "name": "model-space",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A local-first 3D gallery for arranging, collecting and exploring models.",
+  "license": "MIT",
+  "homepage": "https://chenzhiyong1994.github.io/model-space/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenzhiyong1994/model-space.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chenzhiyong1994/model-space/issues"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5188 --strictPort",
+    "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --mode pages --base=/model-space/ && node scripts/package-pages.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 5188 --strictPort",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.0",
+    "@react-three/fiber": "^9.3.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.4"
+  }
+}

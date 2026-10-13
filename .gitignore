@@ -1,0 +1,18 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.local/
+test-results/
+*.log
+output/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.modelspace
+
+# Local one-off curation tools depend on private source collections/backups.
+scripts/*aigc*
+scripts/*immersive*
+scripts/run-gallery-browser.ps1
